@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Fitness Assistant</title>
-</head>
-<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#111;">
-  <video id="video" autoplay playsinline style="display:none;"></video>
-  <canvas id="output" width="640" height="480"></canvas>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Fitness Assistant</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="controls">
+            <label for="exercise">exercise: </label>
+            <select id="exercise">
+                <option value="squat">squats</option>
+            </select>
+        </div>
 
-  <!-- TensorFlow.js + Pose Detection -->
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
-  
-  <script src="script.js"></script>
-</body>
+        <div id="counter">reps: 0</div>
+
+        <video id="video" autoplay playsinline style="display:none;"></video>
+        <canvas id="output" width="640" height="480"></canvas>
+
+        <!-- TensorFlow.js + Pose Detection -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.12.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+
+        <script src="script.js"></script>
+    </body>
 </html>

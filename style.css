@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#controls {
+    margin: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#counter {
+    font-size: 32px;
+    margin: 10px;
+}
+
+canvas {
+    border: 2px solid #444;
+}
